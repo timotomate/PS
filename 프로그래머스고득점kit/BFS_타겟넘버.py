@@ -1,5 +1,8 @@
 from collections import deque
+from itertools import product
 
+
+# BFS
 def solution(numbers, target):
     answer = 0
     queue = deque()
@@ -21,7 +24,16 @@ def solution(numbers, target):
     return answer
 
 
-numbers = [1, 1, 1, 1, 1]
-target = 3
+#
+def solution2(numbers, target):
+    l = [(x, -x) for x in numbers]
+    #print(l)
+    #print(list(product(*l)))
+    s = list(map(sum, product( * l)))
+    return s.count(target)
 
-print(solution(numbers, target))
+
+numbers = [4, 1, 2, 1]
+target = 4
+
+
