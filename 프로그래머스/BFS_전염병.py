@@ -40,3 +40,6 @@ def solution(m, n, infests, vaccinateds):
         return -1
 
     answer = lv
+    return answer
+
+print(solution(m, n, infests, vaccinateds))
