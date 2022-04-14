@@ -18,7 +18,7 @@ def DFS(n, computers, com, visited):
     # com = DFS를 수행할 시작점(v, node라고 생각하면 됨)
 
     for connect in range(n):
-        if connect != com and computers[com][connect] == 1: # 자기자신이 아니고, 자
+        if connect != com and computers[com][connect] == 1: # 자기자신이 아니고, 다른 것과 연결되있다면
             if visited[connect] == False:
                 DFS(n, computers, connect, visited)
 
