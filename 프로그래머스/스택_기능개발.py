@@ -31,7 +31,7 @@ def solution(progresses, speeds):
     answer = [[ceil((100 - progresses[0]) / speeds[0]), 0]]
     
     for progress, speed in zip(progresses, speeds):
-        duration = ceil((100 - progress) / speed)
+        duration = ceil((100 - progress) / speed) #ceil = 버림
         if answer[-1][0] < duration:
             answer.append([duration, 0])
         answer[-1][1] += 1

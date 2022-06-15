@@ -16,4 +16,4 @@ def solution(numbers):
     return str(int(''.join(list(map(str, numbers)))))
 
 
-# print(solution(numbers))
+print(solution(numbers))

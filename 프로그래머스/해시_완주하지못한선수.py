@@ -1,11 +1,7 @@
 from collections import Counter
 
-participant = ["leo", "kiki", "eden"]
-completion = ["eden", "kiki"]
-
-d = zip(participant, completion)
-print(d)
-
+participant = ["mislav", "stanko", "mislav", "ana"]
+completion = ["stanko", "ana", "mislav"]
 
 a = Counter(participant)
 b = Counter(completion)
